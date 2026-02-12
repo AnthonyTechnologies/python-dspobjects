@@ -1,13 +1,14 @@
-Reference
-=========
+API Reference
+=============
 
 .. contents::
     :local:
+    :depth: 2
     :backlinks: none
 
 
-dspobjects.__main__
---------------------
+dspobjects
+---------------------------
 
-.. automodule:: dspobjects.__main__
+.. automodule:: dspobjects
    :members:

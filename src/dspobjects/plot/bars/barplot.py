@@ -1,20 +1,21 @@
 """barplot.py
 
 """
-# Package Header #
-import itertools
-
-from ...header import *
 
 # Header #
-__author__ = __author__
-__credits__ = __credits__
-__maintainer__ = __maintainer__
-__email__ = __email__
+__package_name__ = "dspobjects"
+
+__author__ = "Anthony Fong"
+__credits__ = ["Anthony Fong"]
+__copyright__ = "Copyright 2021, Anthony Fong"
+__license__ = "MIT"
+
+__version__ = "0.5.0"
 
 
 # Imports #
 # Standard Libraries #
+import itertools
 from collections.abc import Iterable, Iterator, Mapping, Sized
 from typing import Any
 

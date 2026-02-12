@@ -1,13 +1,19 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-""" __init__.py
-Test suite for the dspobjects package.
+"""__init__.py
+The concrete test suite for the dspobjects package.
+
+Contains unit tests for the dspobjects package. It provides a structured testing framework to ensure the
+functionality and reliability of the dspobjects components. The tests are organized into subpackages that mirror
+the structure of the main package.
 """
-# Package Header #
-from src.dspobjects.header import *
 
 # Header #
-__author__ = __author__
-__credits__ = __credits__
-__maintainer__ = __maintainer__
-__email__ = __email__
+__package_name__ = "dspobjects"
+
+__author__ = "Anthony Fong"
+__credits__ = ["Anthony Fong"]
+__copyright__ = "Copyright 2021, Anthony Fong"
+__license__ = "MIT"
+
+__version__ = "0.5.0"
+
+
