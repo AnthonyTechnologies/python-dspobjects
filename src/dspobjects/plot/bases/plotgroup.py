@@ -19,7 +19,7 @@ from collections.abc import Iterable, Mapping
 from typing import Any, Union
 
 # Third-Party Packages #
-from baseobjects import BaseDict, search_sentinel
+from baseobjects import BaseDict, SEARCHSENTINEL
 from baseobjects.functions import singlekwargdispatch
 from baseobjects.operations import union_recursive
 import plotly.graph_objects as go
@@ -131,7 +131,7 @@ class PlotGroup(BaseDict):
         default_kwargs = dict(figure=self._figure, build=build)
         for name, plot in self.default_plots.items():
             kwargs = default_kwargs.copy()
-            location = locations.get(name, search_sentinel)
+            location = locations.get(name, SEARCHSENTINEL)
 
             if isinstance(location, tuple):
                 kwargs["subplot"] = self._figure.subplots[location[0]][location[1]]

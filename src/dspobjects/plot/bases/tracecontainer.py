@@ -20,7 +20,7 @@ from collections.abc import Iterable, Iterator
 from typing import Any, Union, Optional
 
 # Third-Party Packages #
-from baseobjects import search_sentinel
+from baseobjects import SEARCHSENTINEL
 from baseobjects.collections import GroupedList
 from plotly.basedatatypes import BaseTraceType
 
@@ -91,8 +91,8 @@ class TraceContainer(GroupedList):
 
         # Require name at this level
         first = names.pop()
-        new_group = self.groups.get(first, search_sentinel)
-        if new_group is search_sentinel:
+        new_group = self.groups.get(first, SEARCHSENTINEL)
+        if new_group is SEARCHSENTINEL:
             new_group = self.__class__(figure=self._figure, parent=self)
             self.groups[first] = new_group
             self.data.append(new_group)
